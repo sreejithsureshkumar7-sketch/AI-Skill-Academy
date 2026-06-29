@@ -4,13 +4,14 @@
 // 3. Create Firestore Database
 // 4. Replace below config with your Firebase config
 
-export const firebaseConfig = {
-  apiKey: "YOUR_FIREBASE_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+const firebaseConfig = {
+  apiKey: "AIzaSyDfXXTG-Mm51WxjXC6GCGAUtcIUEvSfyJI",
+  authDomain: "ai-skill-academy-eca9c.firebaseapp.com",
+  projectId: "ai-skill-academy-eca9c",
+  storageBucket: "ai-skill-academy-eca9c.firebasestorage.app",
+  messagingSenderId: "163999406519",
+  appId: "1:163999406519:web:df986c440f8e6c6c573032",
+  measurementId: "G-MGB2WCMQ65"
 };
 
 // Gemini API key is optional. Keep empty for offline demo mode.
