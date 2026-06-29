@@ -1,4 +1,4 @@
-import { firebaseConfig, GEMINI_API_KEY } from './firebase-config.js';
+import { firebaseConfig, GEMINI_API_KEY } from 'firebase-config.js';
 
 const courses = [
   { id:'uiux', icon:'🎨', title:'UI/UX Designer', modules:['Design basics','Wireframe','Prototype','Figma workflow','Portfolio project'] },
