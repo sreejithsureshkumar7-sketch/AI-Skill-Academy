@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Skill Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand"><span>AI</span> Skill Academy</div>
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#ai-teacher">AI Teacher</a>
+      <a href="#playground">Playground</a>
+      <button id="themeBtn">🌙</button>
+      <button id="loginBtn" class="primary">Google Login</button>
+      <button id="logoutBtn" class="ghost hidden">Logout</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="tag">100% Free AI Learning Platform</p>
+      <h1>Learn UI/UX, Full Stack, Coding & AI with an AI Teacher</h1>
+      <p>Students login with Google, choose a course, learn step-by-step, practice projects, take quizzes and download certificates.</p>
+      <div class="hero-actions">
+        <a href="#courses" class="primary linkBtn">Start Learning</a>
+        <a href="#playground" class="secondary linkBtn">Try Code Editor</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Student Dashboard</h3>
+      <div class="stat"><b id="userName">Guest Student</b><span id="userEmail">Login to save progress</span></div>
+      <div class="progress"><div id="totalProgress"></div></div>
+      <p id="progressText">0% completed</p>
+    </div>
+  </section>
+
+  <main>
+    <section id="courses" class="section">
+      <h2>Choose Your Course</h2>
+      <p class="muted">AI teacher will explain lessons, give tasks, quiz and project ideas.</p>
+      <div id="courseGrid" class="grid"></div>
+    </section>
+
+    <section id="ai-teacher" class="section panel">
+      <div class="panel-head">
+        <div>
+          <h2>🤖 AI Teacher</h2>
+          <p class="muted">Select course and ask doubt. Demo works offline. Add Gemini API key for real AI.</p>
+        </div>
+        <select id="courseSelect"></select>
+      </div>
+      <div id="chatBox" class="chat"></div>
+      <div class="chat-input">
+        <input id="questionInput" placeholder="Ask: Explain this lesson / Give project / Check my code" />
+        <button id="askBtn" class="primary">Ask AI</button>
+      </div>
+    </section>
+
+    <section id="playground" class="section">
+      <h2>💻 HTML CSS JS Playground</h2>
+      <div class="editor-layout">
+        <textarea id="htmlCode" placeholder="HTML code"></textarea>
+        <textarea id="cssCode" placeholder="CSS code"></textarea>
+        <textarea id="jsCode" placeholder="JavaScript code"></textarea>
+      </div>
+      <button id="runBtn" class="primary">Run Code</button>
+      <iframe id="output"></iframe>
+    </section>
+
+    <section class="section panel">
+      <h2>📝 Quiz</h2>
+      <div id="quizBox"></div>
+      <button id="submitQuiz" class="primary">Submit Quiz</button>
+      <p id="quizResult"></p>
+    </section>
+
+    <section class="section panel certificate">
+      <h2>🏆 Certificate</h2>
+      <p>Complete course progress and download certificate.</p>
+      <input id="certName" placeholder="Enter your name" />
+      <button id="certificateBtn" class="primary">Download Certificate</button>
+    </section>
+  </main>
+
+  <footer>Made for Sreejith's AI Skill Academy idea • Free Learning Platform</footer>
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
