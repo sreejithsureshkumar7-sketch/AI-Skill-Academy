@@ -13,6 +13,5 @@ const firebaseConfig = {
   appId: "1:163999406519:web:df986c440f8e6c6c573032",
   measurementId: "G-MGB2WCMQ65"
 };
-
 // Gemini API key is optional. Keep empty for offline demo mode.
 export const GEMINI_API_KEY = "";
